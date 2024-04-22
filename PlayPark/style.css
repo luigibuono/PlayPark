@@ -1,0 +1,64 @@
+html,
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;background: url('./playpark.jpg') no-repeat center center fixed;
+    background-size: cover; height: 100%; } /*Lo Sfondo occuperà sempre il max  */ 
+
+
+#display {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 30px;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: lightgray;
+
+}
+
+.equal-buttons {
+    width: 30px; 
+    height: 30px; 
+}
+
+  .buttons {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid#999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+  }
+  
+  .button {
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  #equal {
+    background-color:black;
+    color: white;
+  }
+  
+  .button:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+
+  .btnColor{
+    margin-bottom: 2rem;
+  }
+
+  @media(max-width: 450px){
+    .button {
+      border: 0.5px solid #999;
+      line-height: 50px;
+      text-align: center;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
